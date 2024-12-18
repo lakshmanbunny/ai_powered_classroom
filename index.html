@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Analysis</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <h1>PDF Analysis</h1>
+    <div id="upload-section">
+        <h2>Upload PDF</h2>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-input" name="file" accept=".pdf">
+            <button type="submit">Upload</button>
+        </form>
+        <p id="upload-message"></p>
+    </div>
+    <div id="qa-section">
+        <h2>Ask a Question</h2>
+        <form id="qa-form">
+            <input type="text" id="doc-id" placeholder="Document ID">
+            <input type="text" id="question" placeholder="Your question">
+            <button type="submit">Ask</button>
+        </form>
+        <p id="qa-message"></p>
+    </div>
+    <div id="document-section">
+        <h2>Document Content</h2>
+        <pre id="document-content"></pre>
+        <h2>Document Images</h2>
+        <div id="document-images"></div>
+    </div>
+    <script src="static/scripts.js"></script>
+</body>
+</html>
